@@ -8,6 +8,11 @@ async function runServer() {
   server.use(bodyParser.json());
 
   server.use("/api/auth/portfolios", require("./routes/portfolio"));
+  server.get("/test", (req, res) => {
+    res.json({message: "hw"})
+  });
+
+
 
   const PORT = parseInt(process.env.PORT, 10) || 3001;
   server.listen(PORT, (err) => {

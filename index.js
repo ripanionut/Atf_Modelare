@@ -12,7 +12,9 @@ async function runServer() {
     res.json({message: "hw"})
   });
 
-
+  server.get('', (req, res) => {
+    res.sendFile('index.html', {root: __dirname})
+  })
 
   const PORT = parseInt(process.env.PORT, 10) || 3001;
   server.listen(PORT, (err) => {

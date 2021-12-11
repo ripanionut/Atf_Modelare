@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const fakeDB = require("./FakeDB");
 
 mongoose.connect(
-  config.DB_URI,
+  config.DB_URI_AFT,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,

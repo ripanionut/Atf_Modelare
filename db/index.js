@@ -7,7 +7,7 @@ require("./models/portfolio")
 exports.connect = () =>{
 
    return mongoose.connect(
-        config.DB_URI_AFT,
+        'mongodb+srv://ripanionut2:ripanionut@cluster1.aeufk.mongodb.net/portfolioAFT?retryWrites=true&w=majority',
         {
           useNewUrlParser: true,
           useUnifiedTopology: true,
